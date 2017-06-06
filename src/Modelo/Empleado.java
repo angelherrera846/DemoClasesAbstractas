@@ -44,9 +44,12 @@ public abstract class Empleado {
         return numeroDeSeguroSocial;
     }
     
+    @Override
     public String toString(){
        return String.format("%s %s\nnumero de seguro social: %s",
                this.getPrimerNombre(),this.getPrimerapellido(),this.getNumeroDeSeguroSocial()); 
     }
+    
+    public abstract double ingresos();
     
 }
