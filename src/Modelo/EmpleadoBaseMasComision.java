@@ -37,7 +37,7 @@ public class EmpleadoBaseMasComision extends EmpleadoPorComision {
         return this.getSalarioBase() + super.ingresos();
     }
     
-    @Override 
+    @Override   
     public String toString(){
         return String.format("%s %s; %s: $%,.2f",
                 "con salario base",super.toString(),
